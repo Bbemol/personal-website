@@ -19,12 +19,12 @@ $marine-blue: #48649F;
 /* OPERA et Chrome et SAFARI */
 @-webkit-keyframes subtitleAnimation {
 	0%   {opacity:0;letter-spacing: 0.2em;}
-	100% {opacity:1;letter-spacing: 0.035em;}
+	100% {opacity:1;letter-spacing: 0.0750em;}
 }
 
 @-webkit-keyframes titleAnimation {
 	0%   {opacity:0;letter-spacing: 0.2em;}
-	100% {opacity:1;letter-spacing: 0.08em;}
+	100% {opacity:1;letter-spacing: 0.1em;}
 }
 
 @-webkit-keyframes btn_cta {
@@ -134,9 +134,9 @@ $marine-blue: #48649F;
 		padding-bottom: 0;
 		margin-bottom: 0;
 		color:$light-grey;
-		font-family: 'Roboto','OpenSans', arial, sans-serif;
+		font-family: 'Yanone Kaffeesatz', sans-serif;
 		font-weight: 300;
-		line-height: 37px;
+		line-height: 45px;
 		font-size: 65px;
 		span.position{
 			/* Chrome, Safari, Opera */
@@ -152,12 +152,14 @@ $marine-blue: #48649F;
 			animation-timing-function: ease-in-out;
 			animation-fill-mode: forwards;
 
+
+			text-transform: uppercase;
 			opacity: 0;
-			font-size: 29px;
+			font-size: 26px;
 			
-			font-weight: 500;
-			color: $marine-blue;
-			font-family: 'Source Sans Pro', sans-serif;
+			font-weight: 300;
+			// color: $marine-blue;
+			color: #CFCFCF;
 		}
 		span.name{
 			/* Chrome, Safari, Opera */
@@ -173,11 +175,13 @@ $marine-blue: #48649F;
 			animation-timing-function: ease-in-out;
 			animation-fill-mode: forwards;
 
+			text-transform: uppercase;
+			font-weight: 300;
+
 			opacity: 0;
 			color:$skin-white;
-			font-family: 'Source Sans Pro', sans-serif;
-			font-size: 50px;
-			
+			font-size: 65px;
+
 		}
 	}
 	.page1_description{
@@ -187,7 +191,7 @@ $marine-blue: #48649F;
 		font-weight: 200;
 	}
 	.page1_social{
-		margin-top: 25px;
+		margin-top: 35px;
 		opacity: 0;
 		/* Chrome, Safari, Opera */
 		-webkit-animation-name: socialAnimation;
@@ -209,6 +213,7 @@ $marine-blue: #48649F;
 			font-size: 40px;
 			&:hover{
 				text-decoration: none;
+				cursor:pointer;
 			}
 		}
 
@@ -216,7 +221,7 @@ $marine-blue: #48649F;
 
 			background-color: rgban(255,255,255,0);
 			margin-left: 15px;
-			color:$skin-white;
+			color:$marine-blue;
 			-webkit-transition: color 0.5s;
 			transition: color 0.5s;
 			-webkit-transition: background-color 0.5s;
@@ -247,7 +252,7 @@ $marine-blue: #48649F;
 		margin: auto;
 
 	}
-	background:url('../img/background_page1_6.jpg') no-repeat center center fixed;
+	background:url('../img/background_page1_7.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -329,7 +334,7 @@ $marine-blue: #48649F;
 
 #page2{
 	.page2_title{
-		color:$marine-blue; 
+		color:$light-grey; 
 		font-size: 18px;
 		letter-spacing: 0.2em;
 		font-weight: 300;
@@ -353,10 +358,10 @@ $marine-blue: #48649F;
 		padding-top:20px;
 		margin-bottom: 50px;
 	}
-	background-color: $light-grey;
-
+	background-color: #2F3438;
 	.wrapper_projects{
-		width: 100%;
+		width: 75%;
+		margin: auto;
 	}
 
 	.wrapper_projects:after{

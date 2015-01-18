@@ -25,7 +25,7 @@ if (typeof console === "undefined" || typeof console.log === "undefined") {
 
 
 var currentPageIndex = 0;
-var numberOfPages = 1;
+var numberOfPages = 2;
 var pageHeight = 800;
 
 var currentSubPageIndex = 0;
