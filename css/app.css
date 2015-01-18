@@ -1,19 +1,21 @@
 /* OPERA et Chrome et SAFARI */
 @-webkit-keyframes subtitleAnimation {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    letter-spacing: 0.2em; }
 
   100% {
-    opacity: 1; } }
+    opacity: 1;
+    letter-spacing: 0.035em; } }
 
 @-webkit-keyframes titleAnimation {
   0% {
     opacity: 0;
-    letter-spacing: 0.5em; }
+    letter-spacing: 0.2em; }
 
   100% {
     opacity: 1;
-    letter-spacing: 0.2em; } }
+    letter-spacing: 0.08em; } }
 
 @-webkit-keyframes btn_cta {
   0% {
@@ -37,19 +39,21 @@
 /* Autres navigateurs */
 @keyframes subtitleAnimation {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    letter-spacing: 0.2em; }
 
   100% {
-    opacity: 1; } }
+    opacity: 1;
+    letter-spacing: 0.035em; } }
 
 @keyframes titleAnimation {
   0% {
     opacity: 0;
-    letter-spacing: 0.5em; }
+    letter-spacing: 0.2em; }
 
   100% {
     opacity: 1;
-    letter-spacing: 0.2em; } }
+    letter-spacing: 0.08em; } }
 
 @keyframes btn_cta {
   0% {
@@ -73,22 +77,22 @@
 /* Chrome, Safari, Opera */
 @-webkit-keyframes paperplaneAnimation {
   0% {
-    top: 480px;
+    top: 150px;
     left: -200px; }
 
   100% {
     left: 50%;
-    top: 530px; } }
+    top: 280px; } }
 
 /* Chrome, Safari, Opera */
 @keyframes paperplaneAnimation {
   0% {
-    top: 480px;
+    top: 150px;
     left: -200px; }
 
   100% {
     left: 50%;
-    top: 530px; } }
+    top: 280px; } }
 
 #page1 {
   background: url('../img/background_page1_6.jpg') no-repeat center center fixed;
@@ -120,13 +124,13 @@
     margin-bottom: 0;
     color: #F4F4F4;
     font-family: 'Roboto', 'OpenSans', arial, sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 37px;
     font-size: 65px; }
     #page1 .page1_subtitle span.position {
       /* Chrome, Safari, Opera */
       -webkit-animation-name: subtitleAnimation;
-      -webkit-animation-delay: 1.5s;
+      -webkit-animation-delay: 0.5s;
       -webkit-animation-duration: 1s;
       -webkit-animation-timing-function: ease-in-out;
       -webkit-animation-fill-mode: forwards;
@@ -138,28 +142,26 @@
       animation-fill-mode: forwards;
       opacity: 0;
       font-size: 29px;
-      letter-spacing: 0.05em;
-      font-weight: 100;
+      font-weight: 500;
       color: #48649F;
-      font-family: "Amatic SC"; }
+      font-family: 'Source Sans Pro', sans-serif; }
     #page1 .page1_subtitle span.name {
       /* Chrome, Safari, Opera */
-      -webkit-animation-name: subtitleAnimation;
-      -webkit-animation-delay: 1s;
+      -webkit-animation-name: titleAnimation;
+      -webkit-animation-delay: 0s;
       -webkit-animation-duration: 1s;
       -webkit-animation-timing-function: ease-in-out;
       -webkit-animation-fill-mode: forwards;
       /* Autres navigateurs */
       animation-name: subtitleAnimation;
-      animation-delay: 1s;
+      animation-delay: 0s;
       animation-duration: 1s;
       animation-timing-function: ease-in-out;
       animation-fill-mode: forwards;
       opacity: 0;
       color: #f9f8ef;
-      font-family: "Amatic SC";
-      font-size: 50px;
-      letter-spacing: 0.2em; }
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 50px; }
   #page1 .page1_description {
     color: #F4F4F4;
     margin-top: 0px;
@@ -170,13 +172,13 @@
     opacity: 0;
     /* Chrome, Safari, Opera */
     -webkit-animation-name: socialAnimation;
-    -webkit-animation-delay: 2s;
+    -webkit-animation-delay: 1s;
     -webkit-animation-duration: 1s;
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-fill-mode: forwards;
     /* Autres navigateurs */
     animation-name: socialAnimation;
-    animation-delay: 2s;
+    animation-delay: 1s;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards; }
@@ -205,7 +207,14 @@
       -webkit-transition: background-color 0.5s;
       transition: background-color 0.5s; }
   #page1 .wrapper_centered {
-    padding-top: 20px; }
+    height: 260px;
+    padding-top: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; }
 
 .btn-cta {
   -webkit-animation-name: subtitleAnimation;
@@ -328,14 +337,14 @@
     margin-top: 20px;
     position: absolute;
     left: -50%;
-    margin-left: -100px;
+    margin-left: -50px;
     -webkit-animation-timing-function: ease-out;
     -webkit-animation: paperplaneAnimation 2s;
     /* Chrome, Safari, Opera */
-    -webkit-animation-delay: 2s;
+    -webkit-animation-delay: 1.2s;
     -webkit-animation-fill-mode: forwards;
     animation-timing-function: ease-out;
-    animation: paperplaneAnimation 2s;
+    animation: paperplaneAnimation 1.2s;
     /* Chrome, Safari, Opera */
     animation-delay: 2s;
     animation-fill-mode: forwards; }
