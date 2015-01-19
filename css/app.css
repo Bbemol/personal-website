@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box; }
+
 /* OPERA et Chrome et SAFARI */
 @-webkit-keyframes subtitleAnimation {
   0% {
@@ -161,7 +164,7 @@
       text-transform: uppercase;
       font-weight: 300;
       opacity: 0;
-      color: #f9f8ef;
+      color: #F8F7EE;
       font-size: 65px; }
   #page1 .page1_description {
     color: #F4F4F4;
@@ -184,7 +187,7 @@
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards; }
     #page1 .page1_social a {
-      color: #f9f8ef;
+      color: #F8F7EE;
       -webkit-transition: color 0.5s;
       transition: color 0.5s;
       font-size: 40px; }
@@ -203,7 +206,7 @@
       margin-left: 0px; }
     #page1 .page1_social .icon:hover {
       color: #48649F;
-      background-color: #f9f8ef;
+      background-color: #F8F7EE;
       -webkit-transition: color 0.5s;
       transition: color 0.5s;
       -webkit-transition: background-color 0.5s;
@@ -282,9 +285,10 @@
     letter-spacing: 0.2em; } }
 
 #page2 {
+  background-color: #F8F7EE;
   background-color: #2F3438; }
   #page2 .page2_title {
-    color: #F4F4F4;
+    color: #F8F7EE;
     font-size: 18px;
     letter-spacing: 0.2em;
     font-weight: 300;
@@ -303,17 +307,19 @@
     animation-fill-mode: forwards; }
   #page2 .wrapper_centered {
     padding-top: 20px;
-    margin-bottom: 50px; }
+    margin-bottom: 20px; }
   #page2 .wrapper_projects {
-    width: 75%;
+    width: 960px;
     margin: auto; }
   #page2 .wrapper_projects:after {
     content: "";
     display: table;
     clear: both; }
   #page2 .project_block {
-    width: 25%;
+    width: 33.3333%;
     float: left;
+    padding: 10px;
+    padding-top: 0px;
     height: auto;
     overflow: auto;
     opacity: 0;
@@ -322,7 +328,6 @@
     transition: opacity 1s;
     transition-delay: 1.5s;
     -webkit-transition-delay: 1.5s;
-    background-image: url('../img/fondprojet1.png');
     background-repeat: no-repeat;
     background-size: cover; }
     #page2 .project_block img {
@@ -330,6 +335,26 @@
       display: block; }
   #page2 .runBlock {
     opacity: 1; }
+
+.content_project {
+  padding: 25px;
+  margin-top: 0;
+  background-color: white;
+  color: #2F3438;
+  position: relative; }
+  .content_project h3 {
+    margin-top: 3px; }
+  .content_project p {
+    font-size: 12px;
+    margin-bottom: 32px; }
+  .content_project .link-website {
+    background-color: #48649F;
+    position: absolute;
+    color: white;
+    padding: 0px 10px;
+    right: 18px;
+    bottom: 18px;
+    font-size: 24px; }
 
 .wrapper {
   text-align: center;

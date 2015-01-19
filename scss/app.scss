@@ -1,6 +1,6 @@
 $dark-grey: #434343;
 $light-grey: #F4F4F4;
-$skin-white:#f9f8ef;
+$skin-white:#F8F7EE;
 $marine-blue: #48649F;
 
 
@@ -14,7 +14,9 @@ $marine-blue: #48649F;
 // 	background-size: 100%;
 // }
 
-
+*{
+	box-sizing: border-box;
+}
 
 /* OPERA et Chrome et SAFARI */
 @-webkit-keyframes subtitleAnimation {
@@ -334,7 +336,7 @@ $marine-blue: #48649F;
 
 #page2{
 	.page2_title{
-		color:$light-grey; 
+		color:$skin-white; 
 		font-size: 18px;
 		letter-spacing: 0.2em;
 		font-weight: 300;
@@ -356,11 +358,12 @@ $marine-blue: #48649F;
 	}
 	.wrapper_centered{
 		padding-top:20px;
-		margin-bottom: 50px;
+		margin-bottom: 20px;
 	}
+	background-color: $skin-white;
 	background-color: #2F3438;
 	.wrapper_projects{
-		width: 75%;
+		width: 960px;
 		margin: auto;
 	}
 
@@ -371,8 +374,10 @@ $marine-blue: #48649F;
 	}
 
 	.project_block{
-		width: 25%;
+		width: 33.3333%;
 		float: left;
+		padding: 10px;
+		padding-top: 0px;
 		height:auto;
 		overflow:auto; 
 		opacity: 0;
@@ -383,14 +388,15 @@ $marine-blue: #48649F;
 		img{
 			width: 100%;
 			display: block;
+
+
 		}
-		background-image: url('../img/fondprojet1.png');
+
+		// background-image: url('../img/fondprojet1.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 
 	}
-
-
 
 	.runBlock{
 		opacity: 1;
@@ -398,7 +404,30 @@ $marine-blue: #48649F;
 
 }
 
-
+.content_project{
+	padding: 25px;
+	margin-top: 0;
+	background-color: white;
+	color:#2F3438;
+	position: relative;
+	
+	h3{
+		margin-top:3px;
+	}
+	p{
+		font-size: 12px;
+		margin-bottom: 32px;
+	}
+	.link-website{
+		background-color: $marine-blue;
+		position: absolute;
+		color:white;
+		padding: 0px 10px;
+		right: 18px;
+		bottom: 18px;
+		font-size: 24px;
+	}
+}
 
 
 
